@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444C044F2CD896CA002C67FD /* CustomAltimeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C044E2CD896CA002C67FD /* CustomAltimeterApp.swift */; };
+		444C04572CD896CC002C67FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444C04562CD896CC002C67FD /* Preview Assets.xcassets */; };
+		444C047B2CD896FF002C67FD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 444C047A2CD896FF002C67FD /* SwiftUICharts */; };
+		444C04A02CD89902002C67FD /* BTUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04842CD89902002C67FD /* BTUUIDs.swift */; };
+		444C04A12CD89902002C67FD /* BTUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04852CD89902002C67FD /* BTUtils.swift */; };
+		444C04A22CD89902002C67FD /* BluetoothManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04862CD89902002C67FD /* BluetoothManagerHelper.swift */; };
+		444C04A32CD89902002C67FD /* BluetoothDeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04872CD89902002C67FD /* BluetoothDeviceHelper.swift */; };
+		444C04A42CD89902002C67FD /* BTDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04882CD89902002C67FD /* BTDevice.swift */; };
+		444C04A52CD89902002C67FD /* BTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04892CD89902002C67FD /* BTManager.swift */; };
+		444C04A72CD89902002C67FD /* ChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C048B2CD89902002C67FD /* ChartStyle.swift */; };
+		444C04B12CD89902002C67FD /* BMP390View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04972CD89902002C67FD /* BMP390View.swift */; };
+		444C04B22CD89902002C67FD /* BluetoothConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C04982CD89902002C67FD /* BluetoothConnectView.swift */; };
+		44C1082C2F734F74005B4B71 /* BMP390.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1082B2F734F70005B4B71 /* BMP390.swift */; };
+		44C1082E2F73513A005B4B71 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1082D2F735137005B4B71 /* HomeScreenView.swift */; };
+		44C108302F7353AA005B4B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C1082F2F7353AA005B4B71 /* Assets.xcassets */; };
+		44C108322F73A312005B4B71 /* HX711View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C108312F73A30F005B4B71 /* HX711View.swift */; };
+		44C108382F73A410005B4B71 /* SensorToolbarButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C108372F73A410005B4B71 /* SensorToolbarButtonStyle.swift */; };
+		44C108342F73A35F005B4B71 /* HX711.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C108332F73A35C005B4B71 /* HX711.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		444C045D2CD896CC002C67FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 444C04432CD896CA002C67FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 444C044A2CD896CA002C67FD;
+			remoteInfo = RocketController;
+		};
+		444C04672CD896CC002C67FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 444C04432CD896CA002C67FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 444C044A2CD896CA002C67FD;
+			remoteInfo = RocketController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		444C044B2CD896CA002C67FD /* CustomAltimeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAltimeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		444C044E2CD896CA002C67FD /* CustomAltimeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAltimeterApp.swift; sourceTree = "<group>"; };
+		444C04542CD896CC002C67FD /* RocketController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RocketController.entitlements; sourceTree = "<group>"; };
+		444C04562CD896CC002C67FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		444C045C2CD896CC002C67FD /* CustomAltimeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAltimeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		444C04662CD896CC002C67FD /* CustomAltimeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAltimeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		444C04842CD89902002C67FD /* BTUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTUUIDs.swift; sourceTree = "<group>"; };
+		444C04852CD89902002C67FD /* BTUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTUtils.swift; sourceTree = "<group>"; };
+		444C04862CD89902002C67FD /* BluetoothManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManagerHelper.swift; sourceTree = "<group>"; };
+		444C04872CD89902002C67FD /* BluetoothDeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceHelper.swift; sourceTree = "<group>"; };
+		444C04882CD89902002C67FD /* BTDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDevice.swift; sourceTree = "<group>"; };
+		444C04892CD89902002C67FD /* BTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTManager.swift; sourceTree = "<group>"; };
+		444C048B2CD89902002C67FD /* ChartStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartStyle.swift; sourceTree = "<group>"; };
+		444C04972CD89902002C67FD /* BMP390View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMP390View.swift; sourceTree = "<group>"; };
+		444C04982CD89902002C67FD /* BluetoothConnectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothConnectView.swift; sourceTree = "<group>"; };
+		44C1082B2F734F70005B4B71 /* BMP390.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMP390.swift; sourceTree = "<group>"; };
+		44C1082D2F735137005B4B71 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		44C1082F2F7353AA005B4B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C108312F73A30F005B4B71 /* HX711View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HX711View.swift; sourceTree = "<group>"; };
+		44C108372F73A410005B4B71 /* SensorToolbarButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorToolbarButtonStyle.swift; sourceTree = "<group>"; };
+		44C108332F73A35C005B4B71 /* HX711.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HX711.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		444C04482CD896CA002C67FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444C047B2CD896FF002C67FD /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C04592CD896CC002C67FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C04632CD896CC002C67FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444C04422CD896CA002C67FD = {
+			isa = PBXGroup;
+			children = (
+				444C044D2CD896CA002C67FD /* CustomAltimeter */,
+				444C044C2CD896CA002C67FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		444C044C2CD896CA002C67FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				444C044B2CD896CA002C67FD /* CustomAltimeter.app */,
+				444C045C2CD896CC002C67FD /* CustomAltimeterTests.xctest */,
+				444C04662CD896CC002C67FD /* CustomAltimeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		444C044D2CD896CA002C67FD /* CustomAltimeter */ = {
+			isa = PBXGroup;
+			children = (
+				444C044E2CD896CA002C67FD /* CustomAltimeterApp.swift */,
+				444C048B2CD89902002C67FD /* ChartStyle.swift */,
+				44C1082B2F734F70005B4B71 /* BMP390.swift */,
+				44C108332F73A35C005B4B71 /* HX711.swift */,
+				444C04542CD896CC002C67FD /* RocketController.entitlements */,
+				444C04832CD89902002C67FD /* Bluetooth */,
+				444C048D2CD89902002C67FD /* Views */,
+				444C04552CD896CC002C67FD /* Preview Content */,
+				44C1082F2F7353AA005B4B71 /* Assets.xcassets */,
+			);
+			path = CustomAltimeter;
+			sourceTree = "<group>";
+		};
+		444C04552CD896CC002C67FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				444C04562CD896CC002C67FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		444C04832CD89902002C67FD /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				444C04842CD89902002C67FD /* BTUUIDs.swift */,
+				444C04852CD89902002C67FD /* BTUtils.swift */,
+				444C04862CD89902002C67FD /* BluetoothManagerHelper.swift */,
+				444C04872CD89902002C67FD /* BluetoothDeviceHelper.swift */,
+				444C04882CD89902002C67FD /* BTDevice.swift */,
+				444C04892CD89902002C67FD /* BTManager.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		444C048D2CD89902002C67FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44C1082D2F735137005B4B71 /* HomeScreenView.swift */,
+				444C04972CD89902002C67FD /* BMP390View.swift */,
+				44C108312F73A30F005B4B71 /* HX711View.swift */,
+				44C108372F73A410005B4B71 /* SensorToolbarButtonStyle.swift */,
+				444C04982CD89902002C67FD /* BluetoothConnectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		444C044A2CD896CA002C67FD /* CustomAltimeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444C04702CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeter" */;
+			buildPhases = (
+				444C04472CD896CA002C67FD /* Sources */,
+				444C04482CD896CA002C67FD /* Frameworks */,
+				444C04492CD896CA002C67FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomAltimeter;
+			packageProductDependencies = (
+				444C047A2CD896FF002C67FD /* SwiftUICharts */,
+			);
+			productName = RocketController;
+			productReference = 444C044B2CD896CA002C67FD /* CustomAltimeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		444C045B2CD896CC002C67FD /* CustomAltimeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444C04732CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeterTests" */;
+			buildPhases = (
+				444C04582CD896CC002C67FD /* Sources */,
+				444C04592CD896CC002C67FD /* Frameworks */,
+				444C045A2CD896CC002C67FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				444C045E2CD896CC002C67FD /* PBXTargetDependency */,
+			);
+			name = CustomAltimeterTests;
+			productName = RocketControllerTests;
+			productReference = 444C045C2CD896CC002C67FD /* CustomAltimeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		444C04652CD896CC002C67FD /* CustomAltimeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444C04762CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeterUITests" */;
+			buildPhases = (
+				444C04622CD896CC002C67FD /* Sources */,
+				444C04632CD896CC002C67FD /* Frameworks */,
+				444C04642CD896CC002C67FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				444C04682CD896CC002C67FD /* PBXTargetDependency */,
+			);
+			name = CustomAltimeterUITests;
+			productName = RocketControllerUITests;
+			productReference = 444C04662CD896CC002C67FD /* CustomAltimeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		444C04432CD896CA002C67FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					444C044A2CD896CA002C67FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					444C045B2CD896CC002C67FD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 444C044A2CD896CA002C67FD;
+					};
+					444C04652CD896CC002C67FD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 444C044A2CD896CA002C67FD;
+					};
+				};
+			};
+			buildConfigurationList = 444C04462CD896CA002C67FD /* Build configuration list for PBXProject "CustomAltimeter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 444C04422CD896CA002C67FD;
+			packageReferences = (
+				444C04792CD896FF002C67FD /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
+			productRefGroup = 444C044C2CD896CA002C67FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				444C044A2CD896CA002C67FD /* CustomAltimeter */,
+				444C045B2CD896CC002C67FD /* CustomAltimeterTests */,
+				444C04652CD896CC002C67FD /* CustomAltimeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		444C04492CD896CA002C67FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C108302F7353AA005B4B71 /* Assets.xcassets in Resources */,
+				444C04572CD896CC002C67FD /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C045A2CD896CC002C67FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C04642CD896CC002C67FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		444C04472CD896CA002C67FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444C04B12CD89902002C67FD /* BMP390View.swift in Sources */,
+				444C04B22CD89902002C67FD /* BluetoothConnectView.swift in Sources */,
+				444C04A22CD89902002C67FD /* BluetoothManagerHelper.swift in Sources */,
+				44C108322F73A312005B4B71 /* HX711View.swift in Sources */,
+				44C108382F73A410005B4B71 /* SensorToolbarButtonStyle.swift in Sources */,
+				44C1082E2F73513A005B4B71 /* HomeScreenView.swift in Sources */,
+				444C04A52CD89902002C67FD /* BTManager.swift in Sources */,
+				444C04A72CD89902002C67FD /* ChartStyle.swift in Sources */,
+				444C04A42CD89902002C67FD /* BTDevice.swift in Sources */,
+				444C04A02CD89902002C67FD /* BTUUIDs.swift in Sources */,
+				444C04A12CD89902002C67FD /* BTUtils.swift in Sources */,
+				44C1082C2F734F74005B4B71 /* BMP390.swift in Sources */,
+				444C04A32CD89902002C67FD /* BluetoothDeviceHelper.swift in Sources */,
+				444C044F2CD896CA002C67FD /* CustomAltimeterApp.swift in Sources */,
+				44C108342F73A35F005B4B71 /* HX711.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C04582CD896CC002C67FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444C04622CD896CC002C67FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		444C045E2CD896CC002C67FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 444C044A2CD896CA002C67FD /* CustomAltimeter */;
+			targetProxy = 444C045D2CD896CC002C67FD /* PBXContainerItemProxy */;
+		};
+		444C04682CD896CC002C67FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 444C044A2CD896CA002C67FD /* CustomAltimeter */;
+			targetProxy = 444C04672CD896CC002C67FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		444C046E2CD896CC002C67FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		444C046F2CD896CC002C67FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		444C04712CD896CC002C67FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAltimeter/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9SL3JA643;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Custom Altimeter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect to ESP32";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Connect to ESP32";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eli367-gt.CustomAltimeter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		444C04722CD896CC002C67FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAltimeter/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9SL3JA643;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Custom Altimeter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect to ESP32";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Connect to ESP32";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eli367-gt.CustomAltimeter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		444C04742CD896CC002C67FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2Y8NAFF7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chestnut.ThrustVectoring.RocketControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomAltimeter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomAltimeter";
+			};
+			name = Debug;
+		};
+		444C04752CD896CC002C67FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2Y8NAFF7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chestnut.ThrustVectoring.RocketControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomAltimeter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomAltimeter";
+			};
+			name = Release;
+		};
+		444C04772CD896CC002C67FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2Y8NAFF7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chestnut.ThrustVectoring.RocketControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RocketController;
+			};
+			name = Debug;
+		};
+		444C04782CD896CC002C67FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2Y8NAFF7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chestnut.ThrustVectoring.RocketControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RocketController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		444C04462CD896CA002C67FD /* Build configuration list for PBXProject "CustomAltimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444C046E2CD896CC002C67FD /* Debug */,
+				444C046F2CD896CC002C67FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		444C04702CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444C04712CD896CC002C67FD /* Debug */,
+				444C04722CD896CC002C67FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		444C04732CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444C04742CD896CC002C67FD /* Debug */,
+				444C04752CD896CC002C67FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		444C04762CD896CC002C67FD /* Build configuration list for PBXNativeTarget "CustomAltimeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444C04772CD896CC002C67FD /* Debug */,
+				444C04782CD896CC002C67FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		444C04792CD896FF002C67FD /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		444C047A2CD896FF002C67FD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 444C04792CD896FF002C67FD /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 444C04432CD896CA002C67FD /* Project object */;
+}
